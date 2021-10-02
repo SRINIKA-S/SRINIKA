@@ -1,0 +1,193 @@
+<html>
+<head>
+<meta charset="utf-8">    
+    <title>sboa-college website
+</title> 
+</head>       
+    <marquee><b><i><font color="black" size="6"> 
+		WELCOME TO SBOA
+    </i></b></marquee>    
+</font>  
+
+<body background="C:\Users\LENOVO\Documents\SEM-5\WEB TECH LAB\PHOTOS\clg.jpeg" link="yellow" alink="lightgreen" 
+vlink="blue" > 
+    <br /> 
+
+<font face="Bookman Old Style"  color="red" size="4"> 
+
+   <h5 align="right">
+   
+            <a href="https://sboacbe.com/">HOME</a>   </br>                                   
+                                                                    
+            <a href="C:\Users\LENOVO\Documents\SEM-5\WEB TECH LAB\PHOTOS\sboa video.mp4">VIDEOS</a> </br>
+<nav>
+		
+			<a href="C:\Users\LENOVO\Documents\SEM-5\WEB TECH LAB\PHOTOS\Kuch Rang Pyar Ke Aise Bhi - Bgm.mp3">AUDIO</a>
+		
+</nav>                     
+            <a href="#">BLOG</a>   
+	    
+       </h5> </font>    
+ 
+<font color="black" size="4" > 
+<h4 align="center">
+<article>
+		 
+		<h1>ENTER YOUR DETAILS</h1>
+		<p>Enter your details to avail counselling details</p>
+</h4></article></font>
+<font color="purple" size="4" >
+<h3 align="center">
+<aside>
+		
+		<summary>RESULTS!</summary></aside>
+<details>
+    <summary>checking on RESULTS?</summary>
+		<h6 align="right">
+		<p>The results of registrstions will be announced from 7 days of filling the form</p></h6></details></h3></font>
+
+<script> 
+    function dragStart(e) {
+        // Sets the operation allowed for a drag source
+        e.dataTransfer.effectAllowed = "move";
+    
+        // Sets the value and type of the dragged data
+        e.dataTransfer.setData("Text", e.target.getAttribute("id"));
+    }
+    function dragOver(e) {
+        // Prevent the browser default handling of the data
+        e.preventDefault();
+        e.stopPropagation();
+    }
+    function drop(e) {
+        // Cancel this event for everyone else
+        e.stopPropagation();
+        e.preventDefault();
+    
+        // Retrieve the dragged data by type
+        var data = e.dataTransfer.getData("Text");
+    
+        // Append image to the drop box
+        e.target.appendChild(document.getElementById(data));
+    }
+</script>
+<style>
+    #dropBox {
+        width: 200px;
+        height: 200px;
+        border: 5px dashed gray;
+        background: lightyellow;
+        text-align: right;
+        margin: 10px 0;
+        color: orange;
+    }
+    #dropBox img {
+	align: right;
+        margin: 5px;
+    }
+</style>
+    <label for="text"><b><u><font color="black" align="right">DROP YOUR PHOTO:</font></u></b></label>
+    <div id="dropBox" ondragover="dragOver(event);" ondrop="drop(event);">
+	<h5 align="right">
+        <!--Dropped image will be inserted here-->
+    </div>
+    <img src="C:\Users\LENOVO\Documents\SEM-5\WEB TECH LAB\PHOTOS\logo.jpg" id="dragA" draggable="true" ondragstart="dragStart(event);" width="180" height="180" alt="Photo"></h5></br></br>
+<style>
+    input[type="email"]:valid{
+        outline: 2px solid green;
+    }
+    input[type="email"]:invalid{
+        outline: 2px solid red;
+    }
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+// Check if the localStorage object exists
+if(localStorage) {
+	$(document).ready(function() {
+		$(".save").click(function() {
+			// Get input name
+			var firstName = $("#firstName").val();
+			
+			// Store data
+    		localStorage.setItem("first_name", firstName);
+			alert("Your first name is saved.");
+		});
+		$(".access").click(function() {
+			// Retrieve data
+    		alert("Hi, " + localStorage.getItem("first_name"));
+		});
+	});
+} else {
+    alert("Sorry, your browser do not support local storage.");
+}
+</script></br></br>
+    <form>
+	<h1 align="right">
+	<font color="blue" size="4" >
+    	<label for="text"><b><u><font color="red">NAME:</font></u></b></label></br></br>
+    	<label>Enter your Name: <input type="text" id="firstName"></label></br>
+        <button type="button" class="save">Save</button>
+        <button type="button" class="access">View</button></br></br>
+    </form>
+<script>
+    function getValue() {
+        var email = document.getElementById("myemail").value;
+        alert(email);
+    }
+</script>
+    <form>
+	<label for="text"><b><u><font color="red">LOGIN:</font></u></b></label></br></br>
+	<label for="myemail">Enter Email Address:</label>
+    	<input type="email" id="email" name="email"/></br></br>    
+	<label for="date">              Enter DOB:             </label>
+	<input type="date" id="start" name="DOB"
+         value="yyyy-mm-dd"
+        min="2000-01-01" max="2031-12-31"> </br>
+	<button type="button" class="save">OK</button>
+    </form> 
+  <style>
+    svg {
+        border: 3px solid red;
+    }
+</style>
+    <svg width="200" height="50">
+        <text x="10" y="20" style="font-size:13px" "font-color=red;">
+                   DETAILS ACCEPTED.	 
+        </text>
+    </svg>  </br>
+    </h1>     
+    <br /><br /><br />
+<address>
+	<h3 align ="right">
+	<font face="calibri" color="black">
+        Written by <a href="srinika.1901238@srec.ac.in">Srinika</a>.<br> 
+        Contact us at:9791700883<br>
+        Ganapathy,Bharathi nagar<br>
+        CBE
+     </font></h3></address>
+
+<hr width="1500px">  
+    <center>    
+    <b>    
+    <font face="arial" size="4" color="green">
+        <a href ="#">About Us|     
+	<a href ="#">Contact Us |     
+        <a href ="#"> Privacy Policy |    
+        <a href ="#"> Terms |        
+        <a href ="#"> Sitemap |    
+        <a href ="#"> Report a Bug |    
+        <a href ="#"> FAQ Partners</a><br/>       
+        <a href ="#"> Common  Questions|    
+        <a href ="#"> Stories |    
+        <a href ="#">Consultants |    
+        <a href ="#"> Ideas |    
+        <a href ="#"> Certifications    
+    </a><br/><br/>  </font>  
+            <font color="#FF0000">all@copyrights 2021  
+    </font>    
+    </b>    
+    </center>  
+
+</body>    
+</html>    
